@@ -1,0 +1,3 @@
+<li><?php if ($fl['bekerja'] == 1) { echo '<a href="';} ?><?php if ($fl['bekerja'] == 1) {echo base_url().'nav_controller/form3rd"> Bekerja </a>';
+                            } else { echo "Bekerja";} ?>  
+                            </li>

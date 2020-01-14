@@ -1,0 +1,2 @@
+tabel bidikmisi -> tambah row keterangan bidikmisi atau bukan
+tabel pencarian kerja -> tambah 25ket, 26ket
