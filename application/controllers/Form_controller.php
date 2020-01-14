@@ -32,7 +32,7 @@ class Form_controller extends CI_Controller {
 		$personal = $this->model_form->get_dtpersonal($email);
 		$idpersonal = $this->model_form->get_idpersonal($email);
 
-		if($personal == false){
+		if($personal == false) {
 		//SESSION
 		$data_session = array('email' => $email);
 		$this->session->set_userdata($data_session);
@@ -148,9 +148,10 @@ class Form_controller extends CI_Controller {
 		$idpersonal = $this->model_form->get_idpersonal($email);
 
 		$data = array(
-			'divisi_alumni' => $this->input->post('divisi_alumni'),
-			'jabatan_alumni' => $this->input->post('jabatan_alumni'),
-			'asal_alumni' => $this->input->post('asal_alumni')
+			'idpersonal'		=> $idpersonal,
+			'divisi_alumni' 	=> $this->input->post('divisi_alumni'),
+			'jabatan_alumni' 	=> $this->input->post('jabatan_alumni'),
+			'asal_alumni' 		=> $this->input->post('asal_alumni')
 		);
 
 		$this->model_form->c_data('bekerja',$data);

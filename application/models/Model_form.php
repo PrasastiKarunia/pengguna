@@ -109,7 +109,7 @@ class Model_form extends CI_Model {
     {
         $this->db->select('*');
         $this->db->from('bekerja');
-        $this->db->join('jurusan', 'bekerja.asal_alumni = jurusan.idjurusan');
+        $this->db->join('jurusan', 'bekerja.asal_alumni = jurusan.namajurusan');
         $this->db->where('idpersonal', $id);
 
         $query = $this->db->get();

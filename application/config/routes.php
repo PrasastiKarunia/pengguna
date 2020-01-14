@@ -53,8 +53,9 @@ $route['default_controller'] = 'Form_controller';
 $route['1stform']	= 'form_controller/startform';
 $route['2ndform'] 	= 'form_controller/save_datadiri';
 $route['3rdform'] 	= 'form_controller/upd_dataperusahaan';
-$route['4thform'] 	= 'form_controller/upd_bekerja';
-$route['addWork']		= 'form_controller/ins_bekerja';
+$route['3rdforms'] 	= 'form_controller/upd_bekerja';
+$route['addWork']	= 'form_controller/ins_bekerja';
+$route['4thform']	= '';
 
 /*
 //UPDATE ROUTES FORM CONTROLLER

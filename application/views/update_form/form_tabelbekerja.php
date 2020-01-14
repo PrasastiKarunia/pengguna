@@ -90,7 +90,7 @@
                                         <th>Departemen/Unit/Divisi Alumni ITS Ditempatkan</th>
                                         <th>Jabatan Tertinggi Alumni ITS di Departemen/Unit/Divisi Perusahaan</th>
                                         <th>Asal Jurusan Alumni ITS</th>
-                                        <th style="text-align: center;">Action</th>
+                                        <th style="text-align: center; width: 20%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -103,7 +103,7 @@
                                         <td><?php echo $k['jabatan_alumni'] ?></td>
                                         <td><?php echo $k['asal_alumni'] ?></td>
                                         <td style="text-align: center;" width="10%">
-                                            <a href="<?php echo base_url().'edit/pekerjaan/'.$k['iddatapekerjaan'] ?>">
+                                            <a href="<?php echo base_url().'edit/pekerjaan/'.$k['idbekerja'] ?>">
                                             <button type="button" class="btn btn-default btn-circle waves-effect waves-circle waves-float">
                                             <i class="material-icons">edit</i>
                                             </a> &nbsp;

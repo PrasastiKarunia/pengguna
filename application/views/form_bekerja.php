@@ -29,7 +29,7 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td style="text-align: center;" width="10%">
+                                        <td style="text-align: center;" width="20%">
                                            <button type="button" class="btn btn-default btn-circle waves-effect waves-circle waves-float" disabled>
                                                 <i class="material-icons">edit</i>
                                             &nbsp;
@@ -122,7 +122,7 @@
                             <h2>PROFIL ALUMNI ITS YANG BEKERJA DIPERUSAHAAN ANDA</h2>
                         </div>
                         <div class="body">
-                            <form id="form_validation" method="POST" action="<?php echo base_url().'4thform'?>">
+                            <form id="form_validation" method="POST" action="<?php echo base_url().'3rdforms'?>">
                                 <div class="row clearfix">
                                     <div class="col-sm-6">
                                         <div class="form-group form-float">
