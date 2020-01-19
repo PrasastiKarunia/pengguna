@@ -148,7 +148,7 @@
                                     <select class="form-control selectpicker" name="asal_alumni" id="asal_alumni" data-live-search="true" required>
                                         <option data-tokens="" value="">-- Please select --</option>
                                         <?php foreach ($jurusan as $j) { ?>
-                                            <option data-tokens="<?php echo $j['namajurusan']; ?>" value="<?php echo $j['namajurusan']; ?>"><?php echo $j['namajurusan']; ?></option>
+                                            <option data-tokens="<?php echo $j['namajurusan']; ?>" value="<?php echo $j['idjurusan']; ?>"><?php echo $j['namajurusan']; ?></option>
                                         <?php } ?>
                                     </select>
                                     <!-- </div> -->

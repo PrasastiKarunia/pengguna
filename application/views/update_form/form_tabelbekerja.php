@@ -101,7 +101,7 @@
                                         <th scope="row"><?php echo $i; ?></th>
                                         <td><?php echo $k['divisi_alumni']; ?></td>
                                         <td><?php echo $k['jabatan_alumni'] ?></td>
-                                        <td><?php echo $k['asal_alumni'] ?></td>
+                                        <td><?php echo $k['namajurusan'] ?></td>
                                         <td style="text-align: center;" width="10%">
                                             <a href="<?php echo base_url().'edit/pekerjaan/'.$k['idbekerja'] ?>">
                                             <button type="button" class="btn btn-default btn-circle waves-effect waves-circle waves-float">
@@ -117,7 +117,7 @@
                             </table>
                             </div>
                                 <button style="border: 0px; background-color: white;" id="nope" ></button>
-                                <a href="<?php echo base_url().'4thforms' ?>"><button style="float: right;" class="btn btn-primary waves-effect">NEXT</button></a>
+                                <a href="<?php echo base_url().'4thform' ?>"><button style="float: right;" class="btn btn-primary waves-effect">NEXT</button></a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                                     <select class="form-control selectpicker" name="asal_alumni" id="asal_alumni" data-live-search="true" required>
                                         <option data-tokens="" value="">-- Please select --</option>
                                         <?php foreach ($jurusan as $j) { ?>
-                                            <option data-tokens="<?php echo $j['namajurusan']; ?>" value="<?php echo $j['namajurusan']; ?>"><?php echo $j['namajurusan']; ?></option>
+                                            <option data-tokens="<?php echo $j['namajurusan']; ?>" value="<?php echo $j['idjurusan']; ?>"><?php echo $j['namajurusan']; ?></option>
                                         <?php } ?>
                                     </select>
                                     <!-- </div> -->

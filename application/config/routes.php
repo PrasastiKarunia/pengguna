@@ -55,59 +55,13 @@ $route['2ndform'] 	= 'form_controller/save_datadiri';
 $route['3rdform'] 	= 'form_controller/upd_dataperusahaan';
 $route['3rdforms'] 	= 'form_controller/upd_bekerja';
 $route['addWork']	= 'form_controller/ins_bekerja';
-$route['4thform']	= '';
-
-/*
-//UPDATE ROUTES FORM CONTROLLER
+$route['4thform']	= 'form_controller/viewKerjasama';
 $route['edit/pekerjaan/(:num)']		= 'form_controller/viewWork/$1';
-$route['edit/wirausaha/(:num)']		= 'form_controller/viewBusiness/$1';
 $route['update/pekerjaan/(:num)']	= 'form_controller/updateWork/$1';
-$route['update/wirausaha/(:num)']	= 'form_controller/updateBusiness/$1';
+$route['5thform'] 	= 'form_controller/upd_kerjasama';
+$route['6thform'] 	= 'form_controller/upd_magang';
+$route['7thform'] 	= 'form_controller/upd_lulusan';
 
-$route['addWork']		= 'form_controller/ins_bekerja';
-$route['addBusiness']	= 'form_controller/ins_wirausaha';
 
-$route['review']	= 'form_controller/reviewform';
-$route['1stform']	= 'form_controller/startform';
-$route['2ndforms'] 	= 'form_controller/save_datadiri';
-$route['2ndform']	= 'form_controller/upd_datapribadi';
-$route['3rdform'] 	= 'form_controller/upd_opsi';
-$route['4thform'] 	= 'form_controller/upd_bekerja';
-$route['5thform'] 	= 'form_controller/upd_wirausaha';
-$route['6thform'] 	= 'form_controller/upd_opsi2';
-$route['7thform'] 	= 'form_controller/upd_pekerjaansebelum';
-$route['8thform'] 	= 'form_controller/upd_kelulusan';
-$route['9thform'] 	= 'form_controller/upd_bidikmisi';
-$route['10thform'] 	= 'form_controller/upd_pencariankerja1';
-$route['11thform'] 	= 'form_controller/upd_pencariankerja2';
-$route['12thform'] 	= 'form_controller/upd_pencariankerja3';
-$route['13thform'] 	= 'form_controller/upd_kompetensi';
-$route['14thform'] 	= 'form_controller/upd_manfaat';
-$route['15thform'] 	= 'form_controller/upd_keaktifan';
-$route['16thform'] 	= 'form_controller/upd_kesehatan';
-$route['submit']	= 'form_controller/upd_pendidikan';
-
-//NAVIGATION FOR WORK AND BUSINESS
-$route['4thforms']	= 'nav_controller/afterWork';
-$route['5thforms']	= 'nav_controller/afterBusiness';
-
-//review FORM NAV CONTROLLER
-$route['review/1stform'] 	= 'nav_controller/form1st';
-$route['review/2ndform'] 	= 'nav_controller/form2nd';
-$route['review/3rdform'] 	= 'nav_controller/form3rd';
-$route['review/4thform'] 	= 'nav_controller/form4th';
-$route['review/5thform'] 	= 'nav_controller/form5th';
-$route['review/6thform'] 	= 'nav_controller/form6th';
-$route['review/7thform'] 	= 'nav_controller/form7th';
-$route['review/8thform'] 	= 'nav_controller/form8th';
-$route['review/9thform'] 	= 'nav_controller/form9th';
-$route['review/10thform'] 	= 'nav_controller/form10th';
-$route['review/11thform'] 	= 'nav_controller/form11th';
-$route['review/12thform'] 	= 'nav_controller/form12th';
-$route['review/13thform'] 	= 'nav_controller/form13th';
-$route['review/14thform'] 	= 'nav_controller/form14th';
-$route['review/15thform'] 	= 'nav_controller/form15th';
-$route['review/16thform'] 	= 'nav_controller/form16th';
-*/
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

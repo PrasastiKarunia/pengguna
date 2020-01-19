@@ -109,7 +109,41 @@ class Model_form extends CI_Model {
     {
         $this->db->select('*');
         $this->db->from('bekerja');
-        $this->db->join('jurusan', 'bekerja.asal_alumni = jurusan.namajurusan');
+        $this->db->join('jurusan', 'bekerja.asal_alumni = jurusan.idjurusan');
+        $this->db->where('idpersonal', $id);
+
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
+    // ===================================GET DATA WIRAUSAHA/BEKERJA BY IDPEKERJAAN & IDWIRAUSAHA
+    public function get_dtbekerja($id)
+    {
+        $this->db->select('*');
+        $this->db->from('bekerja');
+        $this->db->join('jurusan', 'bekerja.asal_alumni = jurusan.idjurusan');
+        $this->db->where('idbekerja', $id);
+
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
+
+    public function get_kerjasama($id)
+    {
+        $this->db->select('*');
+        $this->db->from('kerjasama_penilaian');
+        $this->db->where('idpersonal', $id);
+
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
+
+    public function get_magang($id)
+    {
+        $this->db->select('*');
+        $this->db->from('evaluasi_magang');
         $this->db->where('idpersonal', $id);
 
         $query = $this->db->get();

@@ -8,7 +8,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="progress progress-striped">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 3%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
 
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                         </ol>
                         <!-- END BREADCRUMB -->
                     <div class="header">
-                        <h2>Informasi Perusahaan</h2>
+                        <h2>INFORMASI PERUSAHAAN</h2>
                     </div>
                     <div class="body">
                         <form id="form_validation" method="POST" action="<?php echo base_url() . '3rdform' ?>">
