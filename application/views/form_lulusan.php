@@ -21,7 +21,7 @@
                         <h2>EVALUASI INDUSTRI (DUDI) TERHADAP LULUSAN ITS</h2>
                     </div>
                     <div class="body">
-                        <form id="form_validation" method="POST" action="<?php echo base_url() . '7thform' ?>">
+                        <form id="form_validation" method="POST" onsubmit="return fvalid(this)" action="<?php echo base_url() . '7thform' ?>">
                             <div class="row clearfix">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label class="form-label">Tingkat kepentingan dan kepuasan perusahaan Anda berdasarkan kriteria kompetensi alumni ITS yang bekerja di perusahaan/institusi Anda</label>
@@ -630,7 +630,7 @@
                                                 </tbody>
                                             </table>
                             <button style="border: 0px; background-color: white;" id="nope" ></button>
-                            <button class="btn btn-primary waves-effect" style="float: right;" type="submit">NEXT</button>
+                            <button class="btn btn-primary waves-effect" style="float: right;" type="submit">SAVE</button>
                         </form>
                     </div>
                 </div>
