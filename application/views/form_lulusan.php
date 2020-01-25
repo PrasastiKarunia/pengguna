@@ -630,7 +630,7 @@
                                                 </tbody>
                                             </table>
                             <button style="border: 0px; background-color: white;" id="nope" ></button>
-                            <button class="btn btn-primary waves-effect" style="float: right;" type="submit">SAVE</button>
+                            <button class="btn btn-primary waves-effect" style="float: right;" type="submit">NEXT</button>
                         </form>
                     </div>
                 </div>

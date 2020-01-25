@@ -14,23 +14,105 @@
                     </div>
                     <!-- BREADCRUMB -->
                         <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li class="active">Persetujuan</li>
+                            <li class="active">Review Isian Kuesioner</li>
                         </ol>
                         <!-- END BREADCRUMB -->
                     <div class="header">
-                        <h2>Persetujuan</h2>
+                        <h2>Review Isian Kuesioner</h2>
                     </div>
                     <div class="body">
-                        <form id="form_validation" method="POST" action="<?php echo base_url() . '5thform' ?>">
+                        <form id="form_validation" method="POST" action="<?php echo base_url() . 'submit' ?>">
                             <div class="form-group">
+                                <p style="font-size: 16px; font-weight: bold; color: #3F51B5;">INFORMASI PERSONAL</p>
+                                <hr>
+                                <?php foreach ($personal as $p) {?>
+                                <div class="row clearfix">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Nama Lengkap</label>
+                                            <div class="form-line">
+                                                <input type="text" class="form-control" name="nama" value="<?php echo $p['nama']; ?>" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Posisi/Jabatan</label>
+                                            <div class="form-line">
+                                                <input type="text" class="form-control" name="posisi" value="<?php echo $p['posisi']; ?>" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Nomor Telepon</label>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control numeric" name="no_telp" inputmode="numeric" value="<?php echo $p['no_telp']; ?>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Alamat Email</label>
+                                        <div class="form-line">
+                                            <input type="email" class="form-control" name="email" value="<?php echo $p['email']; ?>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php } ?>
+                            <hr>
+                            <p style="font-size: 16px; font-weight: bold; color: #3F51B5;">INFORMASI PERUSAHAAN</p>
+                            <hr>
+                            <?php foreach ($perusahaan as $u) {?>
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Nama Perusahaan</label>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" name="nama_perusahaan" value="<?php echo $u['nama_perusahaan']; ?>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Alamat Email</label>
+                                        <div class="form-line">
+                                            <input type="email" class="form-control" name="email_perusahaan" value="<?php echo $u['email_perusahaan']; ?>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Nomor Telepon</label>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control numeric" name="notelp_perusahaan" inputmode="numeric" value="<?php echo $u['notelp_perusahaan']; ?>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Alamat Perusahaan</label>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" name="alamat_perusahaan" value="<?php echo $u['alamat_perusahaan']; ?>" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php } ?>
+                            </div>
                                 <div class="demo-checkbox">
                                     <input type="checkbox" name="setuju" id="bersedia" class="chk-col-blue" value="Ya" required />
                                     <label for="bersedia">Dengan ini saya menyatakan bahwa semua data yang saya isi adakah BENAR dan SAH serta dapat saya pertanggungjawabkan kedepannya.</label>
-                                    <small style="display: none; color: red;" id="warning">Data masih belum lengkap!</small>
+                                </div>    
+                            <div class="js-sweetalert" id="alertform">
+                                    <button style="border: 0px; background-color: white;" id="nope" ></button>
+                                    <button class="btn btn-primary waves-effect" style="float: right;" data-type="success" type="submit">FINISH</button>
                                 </div>
-                            </div>                            
-                            <button style="border: 0px; background-color: white;" id="nope" ></button>
-                            <button class="btn btn-primary waves-effect" style="float: right;" type="submit">NEXT</button>
                         </form>
                     </div>
                 </div>
@@ -39,17 +121,9 @@
     </div>
 </section>
 <script>
-    $(function(){
-        $("[name='4a[]']").click(function(){
-            var x = $(this).val();
-            if (document.getElementById("4a9").checked) {
-                 $('input[name="4aket"]').prop('readonly', false);
-                 $('input[name="4aket"]').prop('required', true);
-            } else {
-                $('input[name="4aket"]').prop('readonly', true);
-                $('input[name="4aket"]').prop('required', false);
-                $('input[name="4aket"]').prop('value', '');
-            }
-        })
-    })
+   /*if (document.getElementById("bersedia").checked) {
+        $("#alertform").show();
+        } else {;
+            $("#alertform").hide();
+        } */
 </script>

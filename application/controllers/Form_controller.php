@@ -254,6 +254,7 @@ class Form_controller extends CI_Controller {
 		$wh = array('idpersonal' => $idpersonal);
 		$this->model_form->u_data('flag', $dataflag, $wh);
 
+
 		$data['magang']	= $this->model_form->get_magang($idpersonal);
 		$data['personal'] 	= $this->model_form->get_datapersonal($email);
 		$data['flag'] 		= $this->model_form->get_flag($idpersonal);
@@ -369,12 +370,21 @@ class Form_controller extends CI_Controller {
 
 
 		$data['personal'] 	= $this->model_form->get_datapersonal($email);
+		$data['perusahaan']		= $this->model_form->get_dataperusahaan($idpersonal);
 		$data['flag'] 		= $this->model_form->get_flag($idpersonal);
 
 		$this->load->view('header', $data);
 		$this->load->view('form_setuju', $data);
 		$this->load->view('footer');
 	}
+	public function done()
+	{
+		sleep(2);
+		$this->load->view('header');
+		$this->load->view('menu');
+		$this->load->view('footer');	
+	}
+
 }
 
 /* End of file Form_controller.php */

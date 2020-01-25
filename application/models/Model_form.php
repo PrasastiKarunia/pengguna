@@ -51,6 +51,17 @@ class Model_form extends CI_Model {
         return $query->result_array();
     }
 
+     public function get_dataperusahaan($id)
+    {
+        $this->db->select('*');
+        $this->db->from('dataperusahaan');
+        $this->db->where('idpersonal', $id);
+
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
+
 	// =================== INSERT idpersonal INTO ALL TABLE
     public function insert_idpersonal($dataid)
     {

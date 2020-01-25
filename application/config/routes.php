@@ -61,6 +61,7 @@ $route['update/pekerjaan/(:num)']	= 'form_controller/updateWork/$1';
 $route['5thform'] 	= 'form_controller/upd_kerjasama';
 $route['6thform'] 	= 'form_controller/upd_magang';
 $route['7thform'] 	= 'form_controller/upd_lulusan';
+$route['submit'] 	= 'form_controller/done';
 
 
 $route['404_override'] = '';
