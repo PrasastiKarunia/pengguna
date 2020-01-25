@@ -367,8 +367,12 @@ class Form_controller extends CI_Controller {
 		$wh = array('idpersonal' => $idpersonal);
 		$this->model_form->u_data('flag', $dataflag, $wh);
 
-		$this->load->view('header');
-		$this->load->view('menu');
+
+		$data['personal'] 	= $this->model_form->get_datapersonal($email);
+		$data['flag'] 		= $this->model_form->get_flag($idpersonal);
+
+		$this->load->view('header', $data);
+		$this->load->view('form_setuju', $data);
 		$this->load->view('footer');
 	}
 }
