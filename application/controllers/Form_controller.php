@@ -20,9 +20,9 @@ class Form_controller extends CI_Controller {
 	}
 	public function startform()
 	{
-
+		$data['alert'] = "false";
 		$this->load->view('header');
-		$this->load->view('form_datadiri');
+		$this->load->view('form_datadiri', $data);
 		$this->load->view('footer');
 	}
 	// ========================== STEP 1: UPLOAD DATA DIRI
@@ -68,8 +68,10 @@ class Form_controller extends CI_Controller {
 		$this->load->view('form_perusahaan',$data);
 		$this->load->view('footer');
 		}else{
-			alert("email sudah terdaftar");
-	        return false;
+			$data['alert'] = "true";
+			$this->load->view('header');
+			$this->load->view('form_datadiri', $data);
+			$this->load->view('footer');
 		}
 	}
 

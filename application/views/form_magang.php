@@ -13,10 +13,14 @@
                         </div>
                     </div>
                     <!-- BREADCRUMB -->
-                        <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li class="active">Evaluasi Magang Industri</li>
-                        </ol>
-                        <!-- END BREADCRUMB -->
+                    <ol class="breadcrumb breadcrumb-col-cyan">
+                        <li class="active">Informasi Personal</li>
+                        <li class="active">Informasi Perusahaan</li>
+                        <li class="active">Informasi Alumni</li>
+                        <li class="active">Evaluasi Kerjasama Industri</li>
+                        <li class="active" style="color: #013880;">Evaluasi Magang Industri</li>
+                    </ol>
+                    <!-- END BREADCRUMB -->
                     <div class="header">
                         <h2>EVALUASI INDUSTRI TERHADAP PROGRAM MAGANG/OJT/KERJA PRAKTIK</h2>
                     </div>

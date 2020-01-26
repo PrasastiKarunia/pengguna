@@ -14,7 +14,8 @@
                     </div>
                     <!-- BREADCRUMB -->
                         <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li class="active">Informasi Perusahaan</li>
+                            <li class="active">Informasi Personal</li>
+                            <li class="active" style="color: #013880;" >Informasi Perusahaan</li>
                         </ol>
                         <!-- END BREADCRUMB -->
                     <div class="header">

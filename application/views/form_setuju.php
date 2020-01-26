@@ -13,10 +13,16 @@
                         </div>
                     </div>
                     <!-- BREADCRUMB -->
-                        <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li class="active">Review Isian Kuesioner</li>
-                        </ol>
-                        <!-- END BREADCRUMB -->
+                    <ol class="breadcrumb breadcrumb-col-cyan">
+                        <li class="active">Informasi Personal</li>
+                        <li class="active">Informasi Perusahaan</li>
+                        <li class="active">Informasi Alumni</li>
+                        <li class="active">Evaluasi Kerjasama Industri</li>
+                        <li class="active">Evaluasi Magang Industri</li>
+                        <li class="active">Evaluasi Lulusan</li>
+                        <li class="active" style="color: #013880;">Review</li>
+                    </ol>
+                    <!-- END BREADCRUMB -->
                     <div class="header">
                         <h2>Review Isian Kuesioner</h2>
                     </div>
@@ -106,10 +112,10 @@
                             <?php } ?>
                             </div>
                                 <div class="demo-checkbox">
-                                    <input type="checkbox" name="setuju" id="bersedia" class="chk-col-blue" value="Ya" required />
-                                    <label for="bersedia">Dengan ini saya menyatakan bahwa semua data yang saya isi adakah BENAR dan SAH serta dapat saya pertanggungjawabkan kedepannya.</label>
+                                    <input type="checkbox" name="setuju" id="setuju" class="chk-col-blue" value="Ya" onclick="checking()" required />
+                                    <label for="setuju">Dengan ini saya menyatakan bahwa semua data yang saya isi adakah BENAR dan SAH serta dapat saya pertanggungjawabkan kedepannya.</label>
                                 </div>    
-                            <div class="js-sweetalert" id="alertform">
+                            <div class="js-sweetalert" id="alertform" style="display: none;">
                                     <button style="border: 0px; background-color: white;" id="nope" ></button>
                                     <button class="btn btn-primary waves-effect" style="float: right;" data-type="success" type="submit">FINISH</button>
                                 </div>
@@ -120,10 +126,12 @@
         </div>
     </div>
 </section>
-<script>
-   /*if (document.getElementById("bersedia").checked) {
-        $("#alertform").show();
-        } else {;
-            $("#alertform").hide();
-        } */
+<script type="text/javascript">
+        function checking() {
+            if (document.getElementById("setuju").checked) {
+                $("#alertform").show();
+            } else {
+                $("#alertform").hide();
+            } 
+        }
 </script>

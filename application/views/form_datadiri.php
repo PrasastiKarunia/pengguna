@@ -3,6 +3,21 @@
         <div class="block-header">
             <h2>KUISIONER KEPUASAN PENGGUNA LULUSAN ITS</h2>
         </div>
+        <!-- ALERT FUNCTION -->
+        <?php 
+        if ($alert == "true") {
+            echo 
+            "<div class='alert alert-info' id='alert' style='display: none;'>
+                <strong>Perhatian,</strong> email yang Anda masukkan sudah terdaftar di database kami.
+            </div>";
+        }
+        ?>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#alert").fadeIn(1500).delay(3000).fadeOut(500);
+            });
+        </script>
+        <!-- END ALERT FUNCTION -->
         <!-- Input -->
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -12,11 +27,12 @@
 
                         </div>
                     </div>
+
                     <!-- BREADCRUMB -->
-                        <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li class="active">Informasi Personal</li>
-                        </ol>
-                        <!-- END BREADCRUMB -->
+                    <ol class="breadcrumb breadcrumb-col-cyan">
+                        <li class="active" style="color: #013880;">Informasi Personal</li>
+                    </ol>
+                    <!-- END BREADCRUMB -->
                     <div class="header">
                         <h2>INFORMASI PERSONAL</h2>
                     </div>

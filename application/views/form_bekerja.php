@@ -7,6 +7,17 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                            </div>
+                        </div>
+                        <!-- BREADCRUMB -->
+                        <ol class="breadcrumb breadcrumb-col-cyan">
+                            <li class="active">Informasi Personal</li>
+                            <li class="active">Informasi Perusahaan</li>
+                            <li class="active" style="color: #013880;" >Informasi Alumni</li>
+                        </ol>
+                        <!-- END BREADCRUMB -->
                         <div class="header">
                             <h2>
                                 PROFIL ALUMNI ITS YANG BEKERJA DI PERUSAHAAN ANDA 
@@ -49,75 +60,6 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
-                        <div class="progress progress-striped">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                            </div>
-                        </div>
-                        <!-- BREADCRUMB -->
-                       <!--  <?php foreach ($flag as $fl) {?>
-                        <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li><a href="<?php echo base_url().'review/1stform' ?>">Data diri</a></li>
-
-                            <li <?php if ($fl['opsi'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/2ndform' ?>">Opsi 1</a></li>
-
-                            <li class="active">Bekerja</li>
-
-                            <li <?php if ($fl['wirausaha'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/4thform' ?>">Wirausaha</a></li>
-
-                            <li <?php if ($fl['opsi2'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/5thform' ?>">Opsi 2 </a></li>
-
-                            <li <?php if ($fl['pekerjaansebelum'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/6thform' ?>">Pekerjaan Lama</a></li>
-
-                            <li <?php if ($fl['kelulusan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/7thform' ?>">Kelulusan</a></li>
-
-                            <li <?php if ($fl['opsi3'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/8thform' ?>">Bidikmisi</a></li>
-
-                            <li <?php if ($fl['bidikmisi1'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/9thform' ?>">PK I</a></li>
-
-                            <li <?php if ($fl['bidikmisi2'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/10thform' ?>">PK II</a></li>
-
-                            <li <?php if ($fl['bidikmisi3'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/11thform' ?>">PK III</a></li>
-
-                            <li <?php if ($fl['kompetensi'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/12thform' ?>">Komp I</a></li>
-
-                            <li <?php if ($fl['manfaat'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/13thform' ?>">Komp II</a></li>
-
-                            <li <?php if ($fl['keaktifan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/14thform' ?>">Keaktifan</a></li>
-
-                            <li <?php if ($fl['kesehatan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/15thform' ?>">Fasilitas</a></li>
-
-                            <li <?php if ($fl['pendidikan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/16thform' ?>">Pendidikan</a></li>
-                        </ol>
-                        <?php } ?> -->
-                        <!-- END BREADCRUMB -->
                         <div class="header">
                             <h2>PROFIL ALUMNI ITS YANG BEKERJA DIPERUSAHAAN ANDA</h2>
                         </div>

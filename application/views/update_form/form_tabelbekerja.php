@@ -12,69 +12,11 @@
                             </div>
                         </div>
                         <!-- BREADCRUMB -->
-                        <!-- <?php foreach ($flag as $fl) {?>
                         <ol class="breadcrumb breadcrumb-col-cyan">
-                            <li><a href="<?php echo base_url().'review/1stform' ?>">Data diri</a></li>
-
-                            <li <?php if ($fl['opsi'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/2ndform' ?>">Opsi 1</a></li>
-
-                            <li class="active">Bekerja</li>
-
-                            <li <?php if ($fl['wirausaha'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/4thform' ?>">Wirausaha</a></li>
-
-                            <li <?php if ($fl['opsi2'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/5thform' ?>">Opsi 2 </a></li>
-
-                            <li <?php if ($fl['pekerjaansebelum'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/6thform' ?>">Pekerjaan Lama</a></li>
-
-                            <li <?php if ($fl['kelulusan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/7thform' ?>">Kelulusan</a></li>
-
-                            <li <?php if ($fl['opsi3'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/8thform' ?>">Bidikmisi</a></li>
-
-                            <li <?php if ($fl['bidikmisi1'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/9thform' ?>">PK I</a></li>
-
-                            <li <?php if ($fl['bidikmisi2'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/10thform' ?>">PK II</a></li>
-
-                            <li <?php if ($fl['bidikmisi3'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/11thform' ?>">PK III</a></li>
-
-                            <li <?php if ($fl['kompetensi'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/12thform' ?>">Komp I</a></li>
-
-                            <li <?php if ($fl['manfaat'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/13thform' ?>">Komp II</a></li>
-
-                            <li <?php if ($fl['keaktifan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/14thform' ?>">Keaktifan</a></li>
-
-                            <li <?php if ($fl['kesehatan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/15thform' ?>">Fasilitas</a></li>
-
-                            <li <?php if ($fl['pendidikan'] == 0) {
-                                echo 'style="display: none;"';
-                            }  ?> ><a href="<?php echo base_url().'review/16thform' ?>">Pendidikan</a></li>
+                            <li class="active">Informasi Personal</li>
+                            <li class="active">Informasi Perusahaan</li>
+                            <li class="active" style="color: #013880;" >Informasi Alumni</li>
                         </ol>
-                        <?php } ?> -->
                         <!-- END BREADCRUMB -->
                         <div class="header">
                              <h2>
@@ -127,7 +69,6 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
-                        
                         <div class="header">
                             <h2>TAMBAH PROFIL ALUMNI ITS YANG BEKERJA DIPERUSAHAAN ANDA</h2>
                         </div>
