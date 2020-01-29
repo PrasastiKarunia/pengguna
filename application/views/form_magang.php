@@ -49,7 +49,7 @@
                                         <label class="form-label">Berapa lama waktu minimal magang menurut perusahaan anda?</label><br>
                                         <small>(dalam bulan)</small><br>
                                         <div class="form-line">
-                                            <input type="text" class="form-control numeric" name="62a" required inputmode="numeric">
+                                            <input type="text" class="form-control numeric" name="62a" required inputmode="numeric" placeholder="3">
                                         </div>
                                     </div>
                                 </div>
@@ -156,23 +156,20 @@
                             <div class="form-group">
                                 <label class="form-label">Jurusan/Departemen ITS yang dapat diterima untuk program magang/OJT/kerja praktik magang/OJT/kerja praktik</label><br>
                                 <small>Jawaban bisa lebih dari satu</small><br><br> 
-                                <div class="demo-checkbox">
-                                            
-                                            <?php foreach ($jurusan as $j) { ?>
-                                            <input name="66a[]" required type="checkbox" class="chk-col-blue" value="<?php echo $j['namajurusan']; ?>"><?php echo $j['namajurusan']; ?>
-
-                                        <?php } ?>
-                                        <br>
-                                    <!-- <input name="66a[]" required type="checkbox" id="66a1" class="chk-col-blue" value="1" />
-                                    <label for="66a1">Fisika</label>
-                                    <input name="66a[]" type="checkbox" id="66a2" class="chk-col-blue" value="2"/>
-                                    <label for="66a2">Kimia</label>
-                                    <input name="66a[]" type="checkbox" id="66a3" class="chk-col-blue" value="3"/>
-                                    <label for="66a3">Biologi</label> -->
+                                <div class="demo-checkbox">        
+                                    <?php 
+                                    $id = 1;
+                                    foreach ($jurusan as $j) : ?>
+                                        <div class="col-sm-4">
+                                        <input name="66a[]" required type="checkbox" id="66<?php echo $id; ?>" class="chk-col-blue" value="<?php echo $j['namajurusan']; ?>"/>
+                                        <label for="66<?php echo $id; ?>"><?php echo $j['namajurusan']; ?></label>
                                     </div>
+                                    <?php $id++; endforeach ?>
+                                    </div>
+                                    <div class="col-sm-12">
                                     <div class="input-group">
                                     <span class="input-group-addon">
-                                        <input type="checkbox" name="66a[]" class="chk-col-blue" id="66a9" value="9">
+                                        <input type="checkbox" name="66a[]" class="chk-col-blue" id="66a9" value="Lainnya">
                                         <label for="66a9">Lainnya, sebutkan </label>
                                     </span>
                                     <div class="form-line">
@@ -180,6 +177,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                             <script>
                                 $(function(){
                                     $("[name='66a[]']").click(function(){
@@ -236,7 +234,7 @@
                             <div class="form-group">
                                 <label class="form-label">Pada bulan apa program magang/OJT/kerja praktik dapat dilaksanakan di perusahaan Anda ?</label>
                                 <div class="form-line">
-                                    <input type="text" name="68a" class="form-control" placeholder="Januari - Juli">
+                                    <input type="text" name="68a" class="form-control" placeholder="Ex: Januari - Juli">
                                 </div>
                             </div>                     
                             <button style="border: 0px; background-color: white;" id="nope" ></button>
