@@ -260,7 +260,8 @@ class Form_controller extends CI_Controller {
 		$data['magang']	= $this->model_form->get_magang($idpersonal);
 		$data['personal'] 	= $this->model_form->get_datapersonal($email);
 		$data['flag'] 		= $this->model_form->get_flag($idpersonal);
-
+		$data['jurusan']	= $this->model_form->get_jurusan();
+		
 		$this->load->view('header', $data);
 		$this->load->view('form_magang', $data);
 		$this->load->view('footer');

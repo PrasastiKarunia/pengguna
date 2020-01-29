@@ -70,7 +70,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Nomor Telepon</label>
                                         <div class="form-line">
-                                            <input type="text" class="form-control numeric" name="no_telp" inputmode="numeric" required>
+                                            <input type="text" class="form-control numeric" name="no_telp" inputmode="numeric" required placeholder=" Ex: 0821xxxxxx" maxlength="13">
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Alamat Email</label>
                                         <div class="form-line">
-                                            <input type="email" class="form-control" name="email" required>
+                                            <input type="email" class="form-control" name="email" required placeholder="Ex: xxx@gmail.com">
                                         </div>
                                     </div>
                                 </div>

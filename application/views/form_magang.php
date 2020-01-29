@@ -32,13 +32,13 @@
                                         <label class="form-label">Tingkat kepentingan program magang/OJT/kerja praktik untuk meningkatkan kompetensi mahasiswa ITS</label>
                                         <div class="demo-radio-button">
                                             <input name="61a" required type="radio" id="61a1" class="radio-col-blue" value="1" />
-                                            <label for="61a1">1 Tidak Penting</label>&nbsp;
+                                            <label for="61a1">Tidak Penting</label>&nbsp;
                                             <input name="61a" type="radio" id="61a2" class="radio-col-blue" value="2" />
-                                            <label for="61a2">2 Cukup</label>&nbsp;
+                                            <label for="61a2">Cukup</label>&nbsp;
                                             <input name="61a" type="radio" id="61a3" class="radio-col-blue" value="3" />
-                                            <label for="61a3">3 Penting</label>&nbsp;
+                                            <label for="61a3">Penting</label>&nbsp;
                                             <input name="61a" type="radio" id="61a4" class="radio-col-blue" value="4" />
-                                            <label for="61a4">4 Sangat Penting</label>
+                                            <label for="61a4">Sangat Penting</label>
                                         </div>
                                     </div>
                                </div>
@@ -116,11 +116,17 @@
                                 <small>Jawaban bisa lebih dari satu</small><br><br> 
                                 <div class="demo-checkbox">
                                     <input name="65a[]" required type="checkbox" id="65a1" class="chk-col-blue" value="1" />
-                                    <label for="65a1">Perekrutan Karyawan</label>
+                                    <label for="65a1">Data entry</label>
                                     <input name="65a[]" type="checkbox" id="65a2" class="chk-col-blue" value="2"/>
-                                    <label for="65a2">Magang/OJT/Kerja Praktik</label>
+                                    <label for="65a2">User Acceptance Testing</label>
                                     <input name="65a[]" type="checkbox" id="65a3" class="chk-col-blue" value="3"/>
-                                    <label for="65a3">Beasiswa</label>
+                                    <label for="65a3">Data Analyst</label>
+                                    <input name="65a[]" type="checkbox" id="65a4" class="chk-col-blue" value="4"/>
+                                    <label for="65a4">Programmer</label>
+                                    <input name="65a[]" type="checkbox" id="65a5" class="chk-col-blue" value="5"/>
+                                    <label for="65a5">Back-end Engineer</label>
+                                    <input name="65a[]" type="checkbox" id="65a6" class="chk-col-blue" value="6"/>
+                                    <label for="65a6">Front-end Engineer</label>
                                     </div>
                                     <div class="input-group">
                                     <span class="input-group-addon">
@@ -151,12 +157,18 @@
                                 <label class="form-label">Jurusan/Departemen ITS yang dapat diterima untuk program magang/OJT/kerja praktik magang/OJT/kerja praktik</label><br>
                                 <small>Jawaban bisa lebih dari satu</small><br><br> 
                                 <div class="demo-checkbox">
-                                    <input name="66a[]" required type="checkbox" id="66a1" class="chk-col-blue" value="1" />
-                                    <label for="66a1">Perekrutan Karyawan</label>
+                                            
+                                            <?php foreach ($jurusan as $j) { ?>
+                                            <input name="66a[]" required type="checkbox" class="chk-col-blue" value="<?php echo $j['namajurusan']; ?>"><?php echo $j['namajurusan']; ?>
+
+                                        <?php } ?>
+                                        <br>
+                                    <!-- <input name="66a[]" required type="checkbox" id="66a1" class="chk-col-blue" value="1" />
+                                    <label for="66a1">Fisika</label>
                                     <input name="66a[]" type="checkbox" id="66a2" class="chk-col-blue" value="2"/>
-                                    <label for="66a2">Magang/OJT/Kerja Praktik</label>
+                                    <label for="66a2">Kimia</label>
                                     <input name="66a[]" type="checkbox" id="66a3" class="chk-col-blue" value="3"/>
-                                    <label for="66a3">Beasiswa</label>
+                                    <label for="66a3">Biologi</label> -->
                                     </div>
                                     <div class="input-group">
                                     <span class="input-group-addon">
@@ -188,11 +200,13 @@
                                 <small>Jawaban bisa lebih dari satu</small><br><br> 
                                 <div class="demo-checkbox">
                                     <input name="67a[]" required type="checkbox" id="67a1" class="chk-col-blue" value="1" />
-                                    <label for="67a1">Perekrutan Karyawan</label>
+                                    <label for="67a1">Teknis</label>
                                     <input name="67a[]" type="checkbox" id="67a2" class="chk-col-blue" value="2"/>
-                                    <label for="67a2">Magang/OJT/Kerja Praktik</label>
+                                    <label for="67a2">Pengetahuan</label>
                                     <input name="67a[]" type="checkbox" id="67a3" class="chk-col-blue" value="3"/>
-                                    <label for="67a3">Beasiswa</label>
+                                    <label for="67a3">Manajerial</label>
+                                    <input name="67a[]" type="checkbox" id="67a3" class="chk-col-blue" value="3"/>
+                                    <label for="67a3">Softskill</label>
                                     </div>
                                     <div class="input-group">
                                     <span class="input-group-addon">
@@ -222,7 +236,7 @@
                             <div class="form-group">
                                 <label class="form-label">Pada bulan apa program magang/OJT/kerja praktik dapat dilaksanakan di perusahaan Anda ?</label>
                                 <div class="form-line">
-                                    <input type="text" name="68a" class="form-control">
+                                    <input type="text" name="68a" class="form-control" placeholder="Januari - Juli">
                                 </div>
                             </div>                     
                             <button style="border: 0px; background-color: white;" id="nope" ></button>

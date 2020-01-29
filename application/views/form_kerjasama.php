@@ -62,13 +62,13 @@
                                         <label class="form-label">Menurut Anda, seberapa penting lama masa studi Lulusan ITS terhadap kompetensi di dunia industri (DUDI) ?</label>
                                         <div class="demo-radio-button">
                                             <input name="51a" required type="radio" id="51a1" class="radio-col-blue" value="1" />
-                                            <label for="51a1">1 Tidak Penting</label>&nbsp;
+                                            <label for="51a1">Tidak Penting</label>&nbsp;
                                             <input name="51a" type="radio" id="51a2" class="radio-col-blue" value="2" />
-                                            <label for="51a2">2 Cukup</label>&nbsp;
+                                            <label for="51a2">Cukup</label>&nbsp;
                                             <input name="51a" type="radio" id="51a3" class="radio-col-blue" value="3" />
-                                            <label for="51a3">3 Penting</label>&nbsp;
+                                            <label for="51a3">Penting</label>&nbsp;
                                             <input name="51a" type="radio" id="51a4" class="radio-col-blue" value="4" />
-                                            <label for="51a4">4 Sangat Penting</label>
+                                            <label for="51a4">Sangat Penting</label>
                                         </div>
                                     </div>
                                </div>
@@ -79,13 +79,13 @@
                                         <label class="form-label">Menurut Anda, apakah IPK alumni ITS telah sesuai dengan kompetensi yang dimilikinya ?</label>
                                         <div class="demo-radio-button">
                                             <input name="52a" required type="radio" id="52a1" class="radio-col-blue" value="1" />
-                                            <label for="52a1">1 Tidak Penting</label>&nbsp;
+                                            <label for="52a1">Tidak Penting</label>&nbsp;
                                             <input name="52a" type="radio" id="52a2" class="radio-col-blue" value="2" />
-                                            <label for="52a2">2 Cukup</label>&nbsp;
+                                            <label for="52a2">Cukup</label>&nbsp;
                                             <input name="52a" type="radio" id="52a3" class="radio-col-blue" value="3" />
-                                            <label for="52a3">3 Penting</label>&nbsp;
+                                            <label for="52a3">Penting</label>&nbsp;
                                             <input name="52a" type="radio" id="52a4" class="radio-col-blue" value="4" />
-                                            <label for="52a4">4 Sangat Penting</label>
+                                            <label for="52a4">Sangat Penting</label>
                                         </div>
                                     </div>
                                </div>
@@ -96,13 +96,13 @@
                                         <label class="form-label">Tingkat Kepuasan Industri terhadap kompetensi lulusan ITS (hard skill dan soft skill) ?</label>
                                         <div class="demo-radio-button">
                                             <input name="53a" required type="radio" id="53a1" class="radio-col-blue" value="1" />
-                                            <label for="53a1">1 Tidak Penting</label>&nbsp;
+                                            <label for="53a1">Tidak Penting</label>&nbsp;
                                             <input name="53a" type="radio" id="53a2" class="radio-col-blue" value="2" />
-                                            <label for="53a2">2 Cukup</label>&nbsp;
+                                            <label for="53a2">Cukup</label>&nbsp;
                                             <input name="53a" type="radio" id="53a3" class="radio-col-blue" value="3" />
-                                            <label for="53a3">3 Penting</label>&nbsp;
+                                            <label for="53a3">Penting</label>&nbsp;
                                             <input name="53a" type="radio" id="53a4" class="radio-col-blue" value="4" />
-                                            <label for="53a4">4 Sangat Penting</label>
+                                            <label for="53a4">Sangat Penting</label>
                                         </div>
                                     </div>
                                </div>

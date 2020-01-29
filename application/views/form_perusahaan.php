@@ -36,7 +36,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Alamat Email</label>
                                         <div class="form-line">
-                                            <input type="email" class="form-control" name="email_perusahaan" required>
+                                            <input type="email" class="form-control" name="email_perusahaan" required placeholder="Ex: xxx@its.ac.id">
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Nomor Telepon</label>
                                         <div class="form-line">
-                                            <input type="text" class="form-control numeric" name="notelp_perusahaan" inputmode="numeric" required>
+                                            <input type="text" class="form-control numeric" name="notelp_perusahaan" inputmode="numeric" required placeholder=" Ex: 0821xxxxxx" maxlength="13">
                                         </div>
                                     </div>
                                 </div>
